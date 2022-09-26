@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 import 'package:shopping_cart/bloc/cart/bloc/cart_bloc.dart';
 import 'package:shopping_cart/bloc/user/bloc/user_bloc.dart';
-import 'package:shopping_cart/provider/cart_provider.dart';
-import 'package:shopping_cart/provider/product_provider.dart';
 import 'package:shopping_cart/screens/cart_screen.dart';
 import 'package:shopping_cart/screens/home_screen.dart';
 import 'package:shopping_cart/screens/login_screen.dart';

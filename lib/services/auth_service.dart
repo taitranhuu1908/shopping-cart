@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:shopping_cart/model/product.dart';
 
 import '../model/user.dart';
 
