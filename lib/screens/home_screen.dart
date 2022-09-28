@@ -83,7 +83,17 @@ class _HomeScreenState extends State<HomeScreen>
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text(name),
+            automaticallyImplyLeading: false,
+            title: BlocBuilder<UserBloc, UserState>(builder: (_, state) {
+              if (state is UserInitial) {
+                if (name != "") {
+                  return Text(name);
+                } else {
+                  return Text(state.user.username.toString());
+                }
+              }
+              return Container();
+            }),
             actions: [
               Padding(
                 padding: const EdgeInsets.all(10),

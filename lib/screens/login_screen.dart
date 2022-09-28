@@ -20,9 +20,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   void initState() {
-    String token = UserShare.getTokenShare() ?? "";
     super.initState();
     Future.delayed(const Duration(milliseconds: 100)).then((_) {
+      String token = UserShare.getTokenShare() ?? "";
       if (token != "") {
         Navigator.pushNamed(context, "/home");
       }
